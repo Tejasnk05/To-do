@@ -26,8 +26,8 @@ jobs:
         run: |
           flutter create --project-name daily_todo --org com.example scaffold_tmp
           rm -rf scaffold_tmp/lib
-          cp -r lib scaffold_tmp/lib
-          cp pubspec.yaml scaffold_tmp/pubspec.yaml
+          cp -r todo_app/lib scaffold_tmp/lib
+          cp todo_app/pubspec.yaml scaffold_tmp/pubspec.yaml
 
       - name: Get packages
         working-directory: scaffold_tmp
